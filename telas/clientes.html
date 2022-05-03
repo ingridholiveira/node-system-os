@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>PredialX - Cadastro de Clientes</title>
+</head>
+<body>
+    <section>
+        <div class="container bg-primary">
+            <div class="row justify-content-center ">
+                <div class="col align-self-center">
+                    <a>Clientes</a>
+                </div>
+                <div class="col align-self-center">
+                    <a>Colaboradores</a>
+                </div>
+                <div class="col align-self-center">
+                    <a>Criação de OS</a>
+                </div>
+                <div class="col align-self-center">
+                    <a>Lista de OSs</a>
+                </div>
+            </div>
+        </div>
+    </section>      
+    <section>
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col align-self-center">
+                    <h1>PredialX - Cadastro de Clientes</h1>
+                    <div class="container">
+                        <div class="row justify-content-center mx-lg-n5">
+                            <div class="col align-self-center">
+                                <form>
+                                    <div class="form-group row">    
+                                      <label for="CPF">CPF</label>
+                                      <input type="number" class="form-control" id="CPF" aria-describedby="" placeholder="Digite o CPF do cliente" required>
+                                      <small id="cpfHelp" class="form-text text-muted">Digite apenas números, sem pontos, traços e espaço</small>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label for="text">Nome</label>
+                                      <input type="text" class="form-control" id="client" placeholder="Nome completo do cliente" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+            </div>             
+        </div>
+    </section>
+
+    <section>
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h3>Clientes Cadastrados</h3>
+                </div>
+            </div>
+            <div class="row h5">
+                <div class="col">
+                    <div>CPF</div>
+                </div>
+                <div class="col">
+                    <div>Nome</div>
+                </div>
+                <div class="col">
+                    <div></div>
+                </div>
+                <div class="col">
+                    <div></div>
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="col">
+                    <div>000000</div>
+                </div>
+                <div class="col">
+                    <div>José dos Santos</div>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-sm">Editar cliente</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-sm">Excluir cliente</button>
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="col">
+                    <div>1111111</div>
+                </div>
+                <div class="col">
+                    <div>João da Silva</div>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-sm">Editar cliente</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-sm">Excluir cliente</button>
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="col">
+                    <div>2222222</div>
+                </div>
+                <div class="col">
+                    <div>Maria Gomes</div>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-sm">Editar cliente</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-sm">Excluir cliente</button>
+                </div>
+            </div>
+    </section>
+    
+</body>
+</html>

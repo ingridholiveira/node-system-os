@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>PredialX - Cadastro de Empresas</title>
+</head>
+
+<body>
+
+
+    <section>
+        <header>
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+                            <a class="navbar-brand" href="http://127.0.0.1:5500/telas/login.html">PredialX</a>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                              <ul class="navbar-nav align-content-between">
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="http://127.0.0.1:5500/telas/clientes.html">Clientes</a>
+                                </li>
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="http://127.0.0.1:5500/telas/colaboradores.html">Colaboradores</a>
+                                </li>
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="http://127.0.0.1:5500/telas/ordens.html">Criação de O.S.</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="http://127.0.0.1:5500/telas/listagem.html">Lista de O.S.</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <section>
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col align-self-center">
+                    <h1>PredialX - Cadastro de Colaboradores</h1>
+                    <div class="container py-4">
+                        <div class="row justify-content-center mx-lg-n5">
+                            <div class="col align-self-center">
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="register" class="col-sm-2 col-form-label">Matrícula : </label>
+                                        <div class="col-sm-10">
+                                            <input type="number" class="form-control" id="register"
+                                                placeholder="Digite o número de matrícula de cadastro como colaborador"
+                                                required>
+                                            <small id="registerHelp" class="form-text text-muted">Digite apenas números,
+                                                sem pontos ou espaços.</small>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="contributor" class="col-sm-2 col-form-label">Colaborador : </label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="contributor"
+                                                placeholder="Digite o nome completo do colaborador" required>
+                                            <small id="contributorHelp" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="email" class="col-sm-2 col-form-label">Email :</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Digite o principal email de contato fornecido pelo colaborador"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="password" class="col-sm-2 col-form-label">Senha :</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" id="password"
+                                                placeholder="Senha" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col">
+                                            <button type="submit" class="btn btn-primary">Cadastrar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container py-3'">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h3>Empresas Colaboradoras Cadastradas</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container py-3">
+            <div class="row h5">
+                <div class="col">
+                    <div>CNPJ</div>
+                </div>
+                <div class="col">
+                    <div>Razão Social</div>
+                </div>
+                <div class="col">
+                    <div>Email</div>
+                </div>
+                <div class="col">
+                    <div></div>
+                </div>
+                <div class="col">
+                    <div></div>
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="col">
+                    <div>000000</div>
+                </div>
+                <div class="col">
+                    <div>José S.E.</div>
+                </div>
+                <div class="col">
+                    <div>usuario@josese.com</div>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-sm">Editar colaborador</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-sm">Excluir colaborador</button>
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="col">
+                    <div>1111111</div>
+                </div>
+                <div class="col">
+                    <div>João S.E.</div>
+                </div>
+                <div class="col">
+                    <div>usuario@joaose.com</div>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-sm">Editar colaborador</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-sm">Excluir colaborador</button>
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="col">
+                    <div>2222222</div>
+                </div>
+                <div class="col">
+                    <div>Maria S.E.</div>
+                </div>
+                <div class="col">
+                    <div>usuario@mariase.com</div>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-sm">Editar colaborador</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-sm">Excluir colaborador</button>
+                </div>
+            </div>
+    </section>
+
+</body>
+
+</html>
