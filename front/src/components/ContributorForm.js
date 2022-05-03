@@ -37,7 +37,7 @@ class ContributorForm extends Component {
 
     var apiUrl;
     if (this.state.labelButton == 'Cadastrar') {
-      apiUrl = 'http://localhost:3001/contributor';
+      apiUrl = 'http://localhost:3001/contributor/';
       const resp = await axios.post(apiUrl, req);
       alert(resp.data.msg);
     } else {

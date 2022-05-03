@@ -4,7 +4,7 @@ const contributorsRoutes = (app, fs) => {
   var lodash = require("lodash");
 
   //INSERT
-  app.post('/contributor', (req, res) => {
+  app.post('/contributors', (req, res) => {
     fs.readFile(dataPath, 'utf8', (err, data) => {
       if (err) {
         res.status(500).send(JSON.parse('{"msg": "' + err + '"}'));

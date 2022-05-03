@@ -49,7 +49,7 @@ class ClientsList extends Component {
     render() {
         return (
             <div>
-                <div class="container py-2 border border-info border-1">
+                <div class="container py-2 border p-3 mb-2 bg-primary text-white">
                     <div class="row justify-content-center">
                         <div class="col">
                             <h3>Clientes Cadastrados</h3>
