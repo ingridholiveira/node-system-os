@@ -5,6 +5,12 @@
       "name": "Charlene Oliveira",
       "email": "charlene@predialx.com",
       "password": "123456"
-    } 
+    },
+    {
+      "id": "2",
+      "name": "Clarencio Oliveira",
+      "email": "clarencio@predialx.com",
+      "password": "789456"
+    }
   ]
 }

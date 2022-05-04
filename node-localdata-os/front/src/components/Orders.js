@@ -92,8 +92,8 @@ class Orders extends Component {
                       <div class="form-group row py-2">
                         <label for="register" class="col-sm-2 col-form-label">Colaborador selecionado: </label>
                         <div class="col-sm-10">
-                          <input type="number" class="form-control" id="register" name="contributor" value={this.state.contributor} onChange={this.handleChange}
-                            placeholder="Digite o número de matrícula de cadastro como colaborador" required />
+                          <input type="text" class="form-control" id="register" name="contributor" value={this.state.contributor} onChange={this.handleChange}
+                            placeholder="Digite o colaborador selcionado" required/>
                           <small id="cnpjHelp" class="form-text text-muted">Digite o nome e matricula do colaborador</small>
                         </div>
                       </div>

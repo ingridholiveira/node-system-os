@@ -20,10 +20,12 @@ class ContributorForm extends Component {
     this.inputPasswordRef = React.createRef();
   }
   clearForm() {
-    this.setState({contributorId: null,      name: null,
+    this.setState({
+      contributorId: null, name: null,
       email: null,
       password: null,
-      labelButton: 'Cadastrar'});
+      labelButton: 'Cadastrar'
+    });
     this.inputIdRef.current.value = '';
     this.inputNameRef.current.value = '';
     this.inputEmailRef.current.value = '';
@@ -33,11 +35,12 @@ class ContributorForm extends Component {
 
   async createContributor(e) {
     //  setAppState({ loading: true });
-    const req = { id: this.state.contributorId, name: this.state.name, email:this.state.email, password:this.state.password };
+    const req = { id: this.state.contributorId, name: this.state.name, email: this.state.email, password: this.state.password };
 
     var apiUrl;
-    if (this.state.labelButton == 'Cadastrar') {
-      apiUrl = 'http://localhost:3001/contributor/';
+    console.log(req);
+    if (this.props.labelButton == 'Cadastrar') {
+      apiUrl = 'http://localhost:3001/contributors';
       const resp = await axios.post(apiUrl, req);
       alert(resp.data.msg);
     } else {
@@ -108,7 +111,7 @@ class ContributorForm extends Component {
                     </form>
                     <div class="container py-3">
                       <div class="form-group row">
-                      <button type="button" onClick={this.createContributor.bind()} class="btn btn-outline-success btn-block btn-lg me-3 w-25">{this.props.labelButton}</button>
+                        <button type="button" onClick={this.createContributor.bind()} class="btn btn-outline-success btn-block btn-lg me-3 w-25">{this.props.labelButton}</button>
                         {this.props.labelButton == 'Editar' &&
                           <button type="button" class="btn btn-outline-primary btn-lg w-25" onClick={this.clearForm.bind()}>Limpar</button>
                         }

@@ -4,7 +4,7 @@ import ContributorsList from './ContributorsList';
 import axios from 'axios';
 
 class Contributors extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       contributorId: null,
@@ -22,30 +22,34 @@ class Contributors extends Component {
   async loadFormContributor(id) {
     const apiUrl = 'http://localhost:3001/contributor/' + id;
     var contributor = await axios.get(apiUrl);
-    this.setState({ contributorId: contributor.data[0].id, name: contributor.data[0].name, email:contributor.data[0].email, password:contributor.data[0].password, action: 'Editar' });
+    this.setState({ contributorId: contributor.data[0].id, name: contributor.data[0].name, email: contributor.data[0].email, password: contributor.data[0].password, action: 'Editar' });
 
   }
   clearContributorForm() {
-    this.setState({contributorId: null,      name: null,
+    this.setState({
+      contributorId: null, name: null,
       email: null,
       password: null,
-      labelButton: 'Cadastrar'});
+      labelButton: 'Cadastrar'
+    });
   }
 
   createContributor() {
-    this.client.current.searchClients();
-    this.setState({contributorId: null,      name: null,
+    this.contributor.current.searchContributors();
+    this.setState({
+      contributorId: null, name: null,
       email: null,
       password: null,
-      labelButton: 'Cadastrar'});
+      labelButton: 'Cadastrar'
+    });
   }
-  
+
   render() {
     return (
       <div>
-        <ContributorForm clearForm={this.clearContributorForm} createContributor={this.createContributor} contributorId={this.state.contributorId} name={this.state.name} 
-         email={this.state.email}  password={this.state.password} labelButton={this.state.action}  />
-        <ContributorsList  ref={this.contributor} changeContributor={this.loadFormContributor} />
+        <ContributorForm clearForm={this.clearContributorForm} createContributor={this.createContributor} contributorId={this.state.contributorId} name={this.state.name}
+          email={this.state.email} password={this.state.password} labelButton={this.state.action} />
+        <ContributorsList ref={this.contributor} changeContributor={this.loadFormContributor} />
       </div>
     );
   }
